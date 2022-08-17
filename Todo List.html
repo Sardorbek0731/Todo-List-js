@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="Todo List.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="clock">
+        <h1 id="dateEl"></h1>
+        <h1 id="timeEl"></h1>
+      </div>
+      <div class="title">
+        <h1>Todo List</h1>
+      </div>
+      <div class="by">
+        by
+        <a href="http://github.com/sardorbek0731">Sardorbek OLimov</a>
+      </div>
+      <div class="addTodo_List">
+        <form id="form-create">
+          <div class="input">
+            <input type="text" id="add_input" placeholder="Type todo..." />
+            <div id="message"></div>
+          </div>
+          <div class="addBtn">
+            <button type="submit" id="addBtn">Add</button>
+          </div>
+        </form>
+      </div>
+      <ul id="listGroup"></ul>
+    </div>
+    <script src="Todo List.js"></script>
+  </body>
+</html>

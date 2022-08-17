@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
+}
+.clock {
+  text-align: center;
+  margin-bottom: 15px;
+}
+#dateEl {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+#timeEl {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.title h1 {
+  color: rgb(23, 108, 153);
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+.by,
+a {
+  color: rgb(23, 108, 153);
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+#form-create {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.input {
+  position: relative;
+}
+.input input {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 0 20px;
+  border-radius: 5px;
+  width: 22rem;
+  font-size: 15px;
+  height: 3rem;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 30px;
+}
+#message {
+  position: absolute;
+  bottom: 0;
+  color: red;
+}
+.addBtn button {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(0, 147, 210);
+  box-shadow: 0 10px 20px rgba(44, 75, 183, 0.35);
+  color: white;
+  transition: all 0.4s;
+  margin-bottom: 30px;
+}
+.addBtn button:hover {
+  transform: scale(0.9);
+  box-shadow: 0 0 20px rgba(44, 75, 183, 0.35);
+}
+.list_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 0 20px;
+  border-radius: 5px;
+  width: 22rem;
+  font-size: 15px;
+  height: 3rem;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+.todos_icon {
+  display: flex;
+}
+.todos_time {
+  color: rgba(0, 0, 0, 0.7);
+  margin-right: 10px;
+}
+#delete_icon {
+  cursor: pointer;
+  color: red;
+}
+#edit {
+  cursor: pointer;
+  color: blue;
+  margin-right: 10px;
+}
+.complated {
+  opacity: 0.5;
+}
